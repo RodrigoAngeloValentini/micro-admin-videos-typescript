@@ -18,3 +18,4 @@ export default abstract class Entity<Props = any> {
     } as Required<{ id: string } & Props>;
   }
 }
+//entity para object
