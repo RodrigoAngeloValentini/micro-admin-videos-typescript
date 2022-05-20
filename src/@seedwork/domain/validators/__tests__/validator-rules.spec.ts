@@ -33,7 +33,7 @@ function runRule({
   params = [],
 }: Omit<ExpectedRule, "error">) {
   const validator = ValidatorRules.values(value, property);
-  const method = validator[rule] as (...args: any[]) => ValidatorRules;
+  const method = validator[rule];
   method.apply(validator, params);
 }
 
